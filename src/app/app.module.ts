@@ -8,6 +8,7 @@ import { BalanceComponent } from './balance/balance.component';
 import { WithdrawComponent } from './withdraw/withdraw.component';
 import { DepositCoinsComponent } from './deposit-coins/deposit-coins.component';
 import { DepositNotesComponent } from './deposit-notes/deposit-notes.component';
+import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { DepositNotesComponent } from './deposit-notes/deposit-notes.component';
     BalanceComponent,
     WithdrawComponent,
     DepositCoinsComponent,
-    DepositNotesComponent
+    DepositNotesComponent,
+    PagenotfoundComponent
   ],
   imports: [
     BrowserModule,

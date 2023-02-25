@@ -5,6 +5,7 @@ import { BalanceComponent } from './balance/balance.component'
 import { DepositCoinsComponent } from './deposit-coins/deposit-coins.component'
 import { DepositNotesComponent } from './deposit-notes/deposit-notes.component'
 import { DepositComponent } from './deposit/deposit.component'
+import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
 import { WithdrawComponent } from './withdraw/withdraw.component'
 
 const routes: Routes = [
@@ -35,7 +36,10 @@ const routes: Routes = [
     path: 'withdraw',
     component: WithdrawComponent
   },
-  
+  {
+    path: '**',
+    component: PagenotfoundComponent
+  }
 ];
 
 @NgModule({
