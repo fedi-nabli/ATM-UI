@@ -9,12 +9,27 @@ import { WithdrawComponent } from './withdraw/withdraw.component'
 
 const routes: Routes = [
   {
+    path: '',
+    redirectTo: '/balance',
+    pathMatch: 'full'
+  },
+  {
     path: 'balance',
     component: BalanceComponent
   },
   {
     path: 'deposit',
-    component: DepositComponent
+    component: DepositComponent,
+    children: [
+      {
+        path: 'coins',
+        component: DepositCoinsComponent
+      },
+      {
+        path: 'notes',
+        component: DepositNotesComponent
+      }
+    ]
   },
   {
     path: 'withdraw',
